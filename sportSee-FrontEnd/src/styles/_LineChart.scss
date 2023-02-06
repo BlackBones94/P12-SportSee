@@ -1,0 +1,33 @@
+.lineGraph{
+    width: 258px;
+    height: 263px;
+    // padding-bottom: 100px;
+    // margin-left: 5%;
+    background-color:  #FF0000;
+    border-radius: 5px;
+}
+
+.lineTitle{
+    position: absolute;
+    margin-left: 34px;
+    margin-top: 29px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.customToolTip{
+    background-color: #FFFFFF;
+    width: 39px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+        .intro{
+            font-size: 10px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+        }
+}

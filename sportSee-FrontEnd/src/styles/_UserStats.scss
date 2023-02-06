@@ -1,0 +1,42 @@
+.CalorieBox{
+    display: block;
+    justify-content: end;
+    
+}
+
+.icone{
+    width: 60px;
+    height: 60px;
+    padding-left: 32px;
+}
+
+.result-user{
+    display: flex;
+    // text-align: center;
+    align-items: center;
+    width: 258px ;
+    height: 124px;
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.keydata{
+    padding-left: 24px ;
+    font-size: 20px;
+    font-weight: 700;
+    // padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+.nutrimentTitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: #74798C;
+    margin: 0;
+    padding-left: 24px;
+}

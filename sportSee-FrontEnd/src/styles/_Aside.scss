@@ -1,0 +1,51 @@
+.AsideBar{
+    width: 117px;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.AsideBox{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    // padding-left: 26px;
+    padding-top: 150px;
+    // height: 1024px;
+}
+
+.AsideLi{
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: white;
+    margin-top: 40px;
+    img{
+        padding: 16px;
+    }
+}
+
+.AsideTextBox{
+    width: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 52%;
+    padding-top: 330%;
+}
+
+.AsideBarText{
+    color: white;
+    rotate: 270deg;
+    display:flex;    
+    position: relative;
+    bottom: 50px;
+// padding-left: 59px;
+}

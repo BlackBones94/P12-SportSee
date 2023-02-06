@@ -1,0 +1,37 @@
+.globalDivProfil{
+    padding-left: 25%;
+    padding-top: 150px;
+}
+
+.titleName{
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 68px;
+    .userName{
+        color: #FF0101;
+    }
+}
+
+.phraseAccroche{
+    margin-top: 18px;
+    font-size: 18;
+    font-weight: 400;
+}
+.graphContainer{
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerGraph{
+    display: flex;
+}
+
+.containerGraph .userStatDiv{
+    margin-left: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

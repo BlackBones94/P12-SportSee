@@ -1,0 +1,35 @@
+.legendTitle{
+    color: #74798C;
+}
+
+.graphGauge{
+    width: 258px;
+    height: 263px;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    margin-left: 30px;
+}
+
+.gaugeTitle{
+    margin-left: 30px;
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #20253A;
+}
+
+
+.legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.legendObject{
+    color: #282D30;
+}
+
+.legendTitle{
+    color: #74798C;
+}

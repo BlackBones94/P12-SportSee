@@ -1,0 +1,50 @@
+.StyledGlobalHeader{
+    display: flex;
+    align-items: center;
+    height: 91px;
+    background-color: black;
+    z-index: 1;
+    position: relative;
+    height: 91px;
+    background: #020203;
+    width: 100%;
+    margin-bottom: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.LogoDiv{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.DivTitle{
+    margin-left: 10%;
+}
+
+.StyledNavLink{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.NavBox{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0%;
+    width: 100%;
+    align-items: center;
+    .NavBoxLi{
+        // display: block;
+        // float: right;
+        margin-left: 14%;
+        
+    }
+}
