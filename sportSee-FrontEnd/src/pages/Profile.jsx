@@ -25,6 +25,9 @@ import LineChartx from "../componants/LineChart";
 import RadarChartx from "../componants/RadarChart";
 import GaugeChartx from "../componants/GaugeChart";
 
+// CLASSE
+import Performance from "../utils/models/PerformanceClass";
+
 function Profile() {
 
   const url = "http://localhost:3000"; 
@@ -32,24 +35,25 @@ function Profile() {
 
   // Data Mock Karl////////////////////////
   
-  // const données = {
-  //     activity: USER_ACTIVITY[0].sessions,
-  //     averageSessions: USER_AVERAGE_SESSIONS[0].sessions,
-  //     performance: USER_PERFORMANCE[0],
-  //     user: USER_MAIN_DATA[0],
-  //     userScore: USER_MAIN_DATA[0],
-  //     loadingUser : false,
-  //     loadingActivity : false,
-  //     loadingAverageSessions : false,
-  //     loadingPerformance : false
-  // }
+  const données = {
+      activity: USER_ACTIVITY[0],
+      averageSessions: USER_AVERAGE_SESSIONS[0].sessions,
+      performance: new Performance(USER_PERFORMANCE[0]),
+      user: USER_MAIN_DATA[0],
+      userScore: USER_MAIN_DATA[0],
+      loadingUser : false,
+      loadingActivity : false,
+      loadingAverageSessions : false,
+      loadingPerformance : false
+  }
 
   // Data Mock Cécilia ////////////////////////
+
 
 //   const données = {
 //     activity: USER_ACTIVITY[1].sessions,
 //     averageSessions: USER_AVERAGE_SESSIONS[1].sessions,
-//     performance: USER_PERFORMANCE[1],
+//     performance: new Performance(USER_PERFORMANCE[1]),
 //     user: USER_MAIN_DATA[1],
 //     userScore: USER_MAIN_DATA[1],
 //     loadingUser : false,
@@ -59,21 +63,7 @@ function Profile() {
 // }
 
 
-  //  const  {
-  //     activity,
-  //     averageSessions,
-  //     performance,
-  //     user,
-  //     loadingUser,
-  //     loadingActivity,
-  //     loadingAverageSessions,
-  //     loadingPerformance,
-  //   } = données;
-
-/////////////////////////////////////////////////
- 
-    // Call Api
-    const {
+   const  {
       activity,
       averageSessions,
       performance,
@@ -82,13 +72,28 @@ function Profile() {
       loadingActivity,
       loadingAverageSessions,
       loadingPerformance,
-    } = useFetchData(url, id);
+    } = données;
+
+/////////////////////////////////////////////////
+ 
+    // Call Api
+    // const {
+    //   activity,
+    //   averageSessions,
+    //   performance,
+    //   user,
+    //   loadingUser,
+    //   loadingActivity,
+    //   loadingAverageSessions,
+    //   loadingPerformance,
+    // } = useFetchData(url, id);
 
 
     // //////////////////////////////////////
 
   // condition si les données sont charger ou pas 
   // return le loading
+  console.log("perf",performance)
  if (
     loadingUser ||
     loadingActivity ||

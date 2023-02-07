@@ -18,18 +18,18 @@ import {PolarGrid, PolarAngleAxis, Radar, RadarChart, ResponsiveContainer} from 
     const datas = data.data;
 
     RadarChartx.propTypes = {
-        data: propTypes.object.isRequired
+        data: propTypes.object.isRequired,
     }
 
     // creation d'une const ou on mettra tous 
     // les titres de la kind
     const kindTitle = {
         cardio: "Cardio",
-        energy: "Energy",
+        energy: "Energie",
         endurance: "Endurance",
-        strength: "Strength",
-        speed: "Speed",
-        intensity: "Intensity",
+        strength: "Force",
+        speed: "Vitesse",
+        intensity: "Intensité",
     }
 
     const formatKind = (id) => kindTitle[kind[id]];
@@ -50,7 +50,7 @@ import {PolarGrid, PolarAngleAxis, Radar, RadarChart, ResponsiveContainer} from 
                 />
                 <PolarAngleAxis 
                     dataKey="kind"
-                    tickFormatter={formatKind}
+                    // tickFormatter={formatKind}
                     tick={{ fill: "#FFF",fontSize: "12px"}}
                 />
 

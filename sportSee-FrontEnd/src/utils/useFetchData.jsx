@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { USER_MAIN_DATA } from "../data/mock";
 
 import Activity from "./models/ActivityClass";
-import PerformanceKind from "./models/PerformanceKindClass";
+import Performance from "./models/PerformanceClass";
+// import PerformanceKind from "./models/PerformanceKindClass";
 import Average from "./models/AverageSessionsClass";
 import User from "./models/UserClass";
 
@@ -47,9 +48,9 @@ const useFetchData = (url, id) => {
   useEffect(() => {
     async function fetchData() {
       const data = await fetchPerformance();
-      // const newPerf = new Performance(data.data);
-      setPerformance(data.data);
-      setPerformanceKind(data.kind);
+      const newPerf = new Performance( data.data, data.data.kind );
+      setPerformance(newPerf);
+      console.log("newperf",newPerf)
     }
     fetchData();
   }, []);
@@ -66,14 +67,12 @@ const useFetchData = (url, id) => {
   useEffect(() => {
     async function fetchData() {
       const data = await fetchAverageSessions();
-      const newAverage = new Average( data.data ,data.data.sessions)
+      const newAverage = new Average(  data.data ,data.data.sessions)
       setAverageSessions(newAverage);
     }
     fetchData();
   }, []);
 
-  // const newActivity = new Activity(activity.id , activity.sessions);
-  // const newPerformance = new Performance(data.kind);
   
   return {
     activity,
