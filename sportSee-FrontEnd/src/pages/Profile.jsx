@@ -35,17 +35,17 @@ function Profile() {
 
   // Data Mock Karl////////////////////////
   
-  const données = {
-      activity: USER_ACTIVITY[0],
-      averageSessions: USER_AVERAGE_SESSIONS[0].sessions,
-      performance: new Performance(USER_PERFORMANCE[0]),
-      user: USER_MAIN_DATA[0],
-      userScore: USER_MAIN_DATA[0],
-      loadingUser : false,
-      loadingActivity : false,
-      loadingAverageSessions : false,
-      loadingPerformance : false
-  }
+  // const données = {
+  //     activity: USER_ACTIVITY[0],
+  //     averageSessions: USER_AVERAGE_SESSIONS[0].sessions,
+  //     performance: new Performance(USER_PERFORMANCE[0]),
+  //     user: USER_MAIN_DATA[0],
+  //     userScore: USER_MAIN_DATA[0],
+  //     loadingUser : false,
+  //     loadingActivity : false,
+  //     loadingAverageSessions : false,
+  //     loadingPerformance : false
+  // }
 
   // Data Mock Cécilia ////////////////////////
 
@@ -63,7 +63,21 @@ function Profile() {
 // }
 
 
-   const  {
+//    const  {
+//       activity,
+//       averageSessions,
+//       performance,
+//       user,
+//       loadingUser,
+//       loadingActivity,
+//       loadingAverageSessions,
+//       loadingPerformance,
+//     } = données;
+
+/////////////////////////////////////////////////
+ 
+    // Call Api
+    const {
       activity,
       averageSessions,
       performance,
@@ -72,21 +86,7 @@ function Profile() {
       loadingActivity,
       loadingAverageSessions,
       loadingPerformance,
-    } = données;
-
-/////////////////////////////////////////////////
- 
-    // Call Api
-    // const {
-    //   activity,
-    //   averageSessions,
-    //   performance,
-    //   user,
-    //   loadingUser,
-    //   loadingActivity,
-    //   loadingAverageSessions,
-    //   loadingPerformance,
-    // } = useFetchData(url, id);
+    } = useFetchData(url, id);
 
 
     // //////////////////////////////////////

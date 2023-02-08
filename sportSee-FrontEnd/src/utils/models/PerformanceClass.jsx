@@ -8,12 +8,12 @@ const newKind = {
 };
 
 const translateKind = {
-    6: 'Cardio',
-    5: 'Energie',
-    4: 'Force',
-    3: 'Endurance',
-    2: 'Vitesse',
-    1:'Intensité',
+    6: 'Intensité',
+    5: 'Vitesse',
+    4: 'Endurance',
+    3: 'Force',
+    2: 'Energie' ,
+    1: 'Cardio',
 }
 
 export default class Performance {
